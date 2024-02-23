@@ -10,7 +10,7 @@ const CartItem = () => {
                               <img src={prod} alt="" />
                         </div>
                         <div className="prod-details">
-                              <span className="name">product name</span>
+                              <span className="name"> 1product name</span>
                               <MdClose className='close-btn' />
               <div className="quantity-button">
                 <span>-</span>
