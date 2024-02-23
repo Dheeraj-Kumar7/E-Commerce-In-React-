@@ -10,6 +10,8 @@ import { NavLink } from "react-router-dom";
 import "./Header.css";
 const Header = () => {
   const [scroll, setScroll] = useState(false);
+  const [showCart, setShowCart]=useState(false)
+  const [showSearch, setShowSearch]=useState(false)
   const handleScroll = () => {
     const offSet = window.scrollY;
     if (offSet > 85) {
@@ -41,15 +43,17 @@ const Header = () => {
             <NavLink to="/">Content Lekhakh</NavLink>
           </div>
           <div className="right">
-            <FaSearch />
+            <FaSearch onClick={()=>setShowSearch(true)}/>
             <FaRegHeart />
-            <span className="cart-icon">
+            <span className="cart-icon" onClick={()=>setShowCart(true)}>
               <FaShoppingCart />
               <span>3</span>
             </span>
           </div>
         </div>
       </header>
+      {showCart && <Cart setShowCart={setShowCart}/>}
+      {showSearch && <Search setShowSearch={setShowSearch}/>}
     </>
   );
 };

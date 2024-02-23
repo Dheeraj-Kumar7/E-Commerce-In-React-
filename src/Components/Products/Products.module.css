@@ -1,0 +1,22 @@
+.productsContainer {
+      /* width: 90%; */
+      /* padding: 1rem 5rem; */
+      .secHeading {
+            margin: 1.5rem 0rem;
+
+            &::after {
+                  content: "";
+                  display: block;
+                  top: 1rem;
+                  width: 12%;
+                  height: 2px;
+                  background-color: red;
+            }
+      }
+
+      .products {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+      }
+}

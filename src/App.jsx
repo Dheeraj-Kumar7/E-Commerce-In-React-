@@ -3,23 +3,21 @@ import { Outlet } from "react-router-dom";
 import Header from "./Components/Header/Header.jsx";
 import Newsletter from "./Components/Footer/Newsletter/Newslette.jsx";
 import Footer from "./Components/Footer/Footer.jsx"
-import AppContext from "./utils/Context.jsx";
+import { AppContext } from "./utils/Context.jsx";
 
 const App = () => {
   return (
     <>
-    <AppContext value={[]}>
-    <div>
-      <Header />
-      <Outlet />
-    </div>
-   
-<div>
+      <AppContext value={[]}>
+        <div>
+          <Header />
+          <Outlet />
+        </div>
+        <div>
+          <Footer />
+        </div>
 
-      <Footer />
-</div>
-    
-    </AppContext>
+      </AppContext>
     </>
 
   );

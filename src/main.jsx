@@ -11,13 +11,15 @@ import {
   createBrowserRouter,
   Route, 
 } from "react-router-dom";
+import SingleProduct from "./Components/SingleProduct/SingleProduct.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
       <Route path="/" element={<App />}>
         <Route index element={<Home />} />
         <Route path="category" element={<Category/>}/>
-        <Route path="product" element={<Products />} />
+        <Route path="product" element={<Products headingTitle="section Heading" />} />
+        <Route path="singleproduct" element={<SingleProduct/>}/>
       </Route>
       
   )

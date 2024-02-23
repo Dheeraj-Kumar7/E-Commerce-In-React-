@@ -5,9 +5,25 @@
   box-sizing: border-box;
   text-transform: capitalize;
   font-family: "Urbanist", sans-serif;
-  /* color: var(--white-color); */
 }
+.Main-Button {
+  display: flex;
+  gap: 0.5rem;
 
+  .button {
+    background-color: var(--white-color);
+    color: var(--black-color);
+    padding: 1rem;
+    transition: all 0.3s linear;
+    border-radius: 2rem;
+    cursor: pointer;
+
+    &:hover {
+      background-color: var(--black-color);
+      color: var(--white-color);
+    }
+  }
+}
 a {
   text-decoration: none;
   color: var(--white-color);
@@ -94,4 +110,29 @@ body {
 }
 .home{
     height: 100vh;
+}
+.quantity-button {
+  display: flex;
+  margin-right: 1rem;
+  width: fit-content;
+
+  span {
+        width: 2vw;
+        height: 5vh;
+       cursor: pointer;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid rgba(0, 0, 0, 0.2);
+
+        &:nth-child(1) {
+              border-right: 2px solid rgba(0, 0, 0, 0.2);
+        }
+
+        &:nth-child(2) {
+              width: 3vw;
+              
+        }
+  }
 }

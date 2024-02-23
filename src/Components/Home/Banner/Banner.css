@@ -1,12 +1,12 @@
 .hero-banner {
   padding: 0.1rem 0rem;
   position: relative;
-  height: 100vh;
-  .banner-img{
-    width: 100%;
-    z-index: 98;
-  }
+  background-image: url(../../../assets/Images/p9.jpg);
+  height: 50vh;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
+
 .text-content {
   position: absolute;
   top: 5rem;
@@ -15,27 +15,30 @@
   justify-content: center;
   align-items: center;
   display: flex;
-  .Main-Button {
+
+  /* .Main-Button {
     display: flex;
-    gap: 0.5rem;
-    .button {
+    gap: 0.5rem; */
+
+    /* .button {
       background-color: var(--white-color);
       color: var(--black-color);
       padding: 1rem;
       transition: all 0.3s linear;
       border-radius: 2rem;
       cursor: pointer;
+
       &:hover {
         background-color: var(--black-color);
         color: var(--white-color);
       }
-    }
-  }
-  p{
+    } */
+  /* } */
+
+  p {
     line-height: 1.6rem;
     max-width: 100vw;
-    padding: 1rem 9rem;
-   margin-bottom: 1rem;
-   /* color: var(--white-color); */
+    padding: 0.1rem 3rem;
+    margin-bottom: 1rem;
   }
 }

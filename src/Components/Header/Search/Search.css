@@ -1,0 +1,92 @@
+.search-model{
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: 999;
+      top: 0;
+      left: 0;
+      background-color: white;
+      animation: slideSearchWindow 0.4s ease-in forwards;
+      .form-field{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0.6rem 6rem;
+            position: relative;
+            input{
+                  width: 90%;
+                  max-width: 1200px;
+                  padding: 0.8rem;
+                  border-radius: 3rem;
+                  text-align: center;
+                  font-size: 1.2rem;
+                  font-weight: 600;
+            }
+            svg{
+                  font-size: 2.3rem;
+                  font-weight: 700;
+                  position: absolute;
+                  right: 11rem;
+                  top: 16px;
+                  cursor: pointer;
+            }
+            
+      }
+      .search-result-content{
+            max-width: calc(100% - 20px);
+            margin: 0 auto;
+            .search-results{
+                  height: calc(100vh - 110px);
+                  .search-result-item{
+                        display: flex;
+                        align-items: center;
+                        gap: 1rem;
+                        padding: 1rem 0rem;
+                        border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+                        cursor: pointer;
+                        background-color: rgba(0, 0, 0, 0.2);
+                        justify-content: center;
+                        .img-container{
+                              width: 6vw;
+                              height: 5vh;
+                              flex-shrink: 0;
+                              img{
+                                    width: 100%;
+                                    height: 100%;
+                              }
+                        }
+                        .prod-details{
+                              overflow: hidden;
+                              .name{
+                                    text-overflow: ellipsis;
+                                    white-space: nowrap;
+                                    overflow: hidden;
+                                    font-size: 1rem;
+                                    line-height: 1;
+                                    margin-bottom: 1rem;
+                                    display: block;
+                                    padding-right: 1.7rem;
+                              }
+                              .desc{
+                                    font-size: 1rem;
+                                    line-height: 1;
+                                    display: block;
+                                    text-overflow: ellipsis;
+                                    white-space: nowrap;
+                                    overflow: hidden;
+                                    color: rgba(0, 0, 0, 0.5);
+                              }
+                        }
+                  }
+            }
+      }
+}
+@keyframes slideSearchWindow{
+      0%{
+            transform: translateY(100%);
+      }
+      100%{
+            transform: translateY(0);
+      }
+}

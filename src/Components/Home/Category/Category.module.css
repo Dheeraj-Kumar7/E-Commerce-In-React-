@@ -1,0 +1,21 @@
+.shopbycategory{
+      /* margin: 2rem 0; */
+      .categories{
+            display: flex;
+            gap: 1rem;
+            flex-flow: wrap;
+          flex-direction: row;
+            .category{
+                  cursor: pointer; 
+                  overflow: hidden; 
+                  img{
+                        width: 16vw;
+                         display: block;
+                        transition: all 0.2s linear; 
+                        &:hover{
+                               transform: scale(1.2); 
+                        }
+                  }
+            }
+      }
+}

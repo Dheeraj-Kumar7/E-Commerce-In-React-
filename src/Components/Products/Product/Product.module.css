@@ -1,0 +1,22 @@
+.productCard{
+      width: 100%; 
+      .thumbnail{
+            width: 100%;
+            margin: 1rem 0rem; 
+            img{
+                  width: 28vw;
+                  display: block;
+                  transition: all  0.3s linear;
+                  cursor: pointer;
+            }
+      }
+      .prodDetails{
+            .name{
+                  display: block;
+                  text-overflow: ellipsis;
+                  white-space: nowrap;
+                  overflow: hidden;
+            }
+            
+      }
+}
