@@ -1,5 +1,5 @@
 .productsContainer {
-      /* width: 90%; */
+      width: 100%;
       /* padding: 1rem 5rem; */
       .secHeading {
             margin: 1.5rem 0rem;
@@ -15,8 +15,11 @@
       }
 
       .products {
+            justify-content: center;
+            align-items: center;
+            width: 93%;
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 1rem;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 3rem;
       }
 }

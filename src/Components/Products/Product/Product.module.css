@@ -1,11 +1,10 @@
 .productCard{
       width: 100%; 
       .thumbnail{
-            width: 100%;
+            width: calc(100% - 2px);
             margin: 1rem 0rem; 
             img{
-                  width: 28vw;
-                  display: block;
+                  max-width: 20vw;
                   transition: all  0.3s linear;
                   cursor: pointer;
             }

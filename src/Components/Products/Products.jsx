@@ -11,9 +11,6 @@ const Products = ({innerPage,headingTitle}) => {
         <Product />
         <Product />
         <Product />
-        <Product />
-        <Product />
-        <Product />
       </div>
     </div>
   )

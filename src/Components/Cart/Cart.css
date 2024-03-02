@@ -18,7 +18,7 @@
       }
 
       .cart-content {
-            width: 24vw;
+            width: 34vw;
             height: 100%;
             display: flex;
             background-color: white;
@@ -123,6 +123,6 @@
       }
 
       100% {
-            transform: translate(0);
+            transform: translate(0%);
       }
 }

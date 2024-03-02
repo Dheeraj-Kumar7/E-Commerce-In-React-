@@ -1,19 +1,20 @@
-.shopbycategory{
-      /* margin: 2rem 0; */
-      .categories{
-            display: flex;
-            gap: 1rem;
-            flex-flow: wrap;
-          flex-direction: row;
-            .category{
-                  cursor: pointer; 
-                  overflow: hidden; 
-                  img{
-                        width: 16vw;
-                         display: block;
-                        transition: all 0.2s linear; 
-                        &:hover{
-                               transform: scale(1.2); 
+.shopbycategory {
+      width: 100%;
+      .categories {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+
+            .category {
+                  cursor: pointer;
+                  overflow: hidden;
+                  max-width: calc(100% - 1vw);
+
+                  img {
+                        max-width: 16vw;
+                        transition: all 0.2s ease-in-out linear;
+
+                        &:hover {
+                              transform: scale(1.1);
                         }
                   }
             }
