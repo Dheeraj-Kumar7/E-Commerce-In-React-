@@ -1,7 +1,7 @@
 import React from 'react'
 import { MdClose } from 'react-icons/md'
 import "./Search.css"
-import prod from "../../../assets/Images/back2.jpg"
+// import prod from "../../../assets/Images/back2.jpg"
 const Search = ({ setShowSearch }) => {
   return (
     <div className='search-model'>

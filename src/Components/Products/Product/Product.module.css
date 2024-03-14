@@ -4,7 +4,7 @@
             width: calc(100% - 2px);
             margin: 1rem 0rem; 
             img{
-                  max-width: 20vw;
+                  max-width: 12vw;
                   transition: all  0.3s linear;
                   cursor: pointer;
             }

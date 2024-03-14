@@ -3,7 +3,7 @@ import Products from "../../Products/Products"
 const RelatedProduct = () => {
   return (
     <div>
-<Products headingTitle="Related products"/>
+      <Products headingTitle="Related products" />
     </div>
   )
 }

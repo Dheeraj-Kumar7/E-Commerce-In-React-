@@ -1,4 +1,6 @@
 import React from "react";
+import { Provider } from "react-redux";
+import MainStore from "./store/Store.js";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
@@ -9,23 +11,27 @@ import {
   createRoutesFromElements,
   RouterProvider,
   createBrowserRouter,
-  Route, 
+  Route,
 } from "react-router-dom";
 import SingleProduct from "./Components/SingleProduct/SingleProduct.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
+    <>
       <Route path="/" element={<App />}>
         <Route index element={<Home />} />
-        <Route path="category" element={<Category/>}/>
-        <Route path="product" element={<Products headingTitle="section Heading" />} />
-        <Route path="singleproduct" element={<SingleProduct/>}/>
+        <Route path="category" element={<Category />} />
+        <Route
+          path="product"
+          element={<Products headingTitle="section Heading" />}
+        />
       </Route>
-      
+      <Route path="singleproduct/*" element={<SingleProduct />} />
+    </>
   )
 );
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
+  <Provider store={MainStore}>
     <RouterProvider router={router} />
-  </React.StrictMode>
+  </Provider>
 );

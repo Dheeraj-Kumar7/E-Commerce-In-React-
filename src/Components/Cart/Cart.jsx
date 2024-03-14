@@ -3,8 +3,10 @@ import { MdClose } from "react-icons/md";
 import { BsCartX } from "react-icons/bs"
 import "./Cart.css"
 import CartItem from './CartItem/CartItem';
+import { useSelector } from 'react-redux';
 const Cart = ({setShowCart}) => {
-
+const cartItem=useSelector((store)=>store.sendProduct)
+console.log(cartItem)
   return (
     <div className='cart-panel'>
       <div className="opac-layer">
@@ -22,7 +24,7 @@ const Cart = ({setShowCart}) => {
           <button className='return-btn'>return to shop</button>
         </div> */}
         <>
-        <CartItem/>
+        {cartItem.map((productItem)=> <CartItem key={productItem.id} productItem={productItem}/>)}
         <div className="cart-footer">
           <div className="subtotal">
             <span className="text">subtotal:</span>

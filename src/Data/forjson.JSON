@@ -1,0 +1,76 @@
+{
+    "students": [
+        {
+            "name": "dheeraj",
+            "age": 24,
+            "id_card": 1999,
+            "year": 1,
+            "college": "IIMT",
+            "is_student": true,
+            "p_lang": [
+                "c",
+                "c++",
+                "java"
+            ],
+            "address": {
+                "city": "delhi",
+                "state": "new delhi",
+                "pincode": 201304
+            }
+        },
+        {
+            "name": "ritik",
+            "age": 24,
+            "id_card": 1999,
+            "year": 1,
+            "college": "IIMT",
+            "is_student": true,
+            "p_lang": [
+                "c",
+                "c++",
+                "java"
+            ],
+            "address": {
+                "city": "delhi",
+                "state": "new delhi",
+                "pincode": 201304
+            }
+        },
+        {
+            "name": "keshav",
+            "age": 24,
+            "id_card": 1999,
+            "year": 1,
+            "college": "IIMT",
+            "is_student": true,
+            "p_lang": [
+                "c",
+                "c++",
+                "java"
+            ],
+            "address": {
+                "city": "delhi",
+                "state": "new delhi",
+                "pincode": 201304
+            }
+        },
+        {
+            "name": "bebu",
+            "age": 24,
+            "id_card": 1999,
+            "year": 1,
+            "college": "IIMT",
+            "is_student": true,
+            "p_lang": [
+                "c",
+                "c++",
+                "java"
+            ],
+            "address": {
+                "city": "delhi",
+                "state": "new delhi",
+                "pincode": 201304
+            }
+        }
+    ]
+}

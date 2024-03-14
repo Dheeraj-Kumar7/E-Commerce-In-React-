@@ -1,21 +1,14 @@
 import React from 'react'
 import style from "./Category.module.css"
-import cat1 from "../../../assets/Images/p5.png.jpg"
-const Category = () => {
+import { useNavigate } from 'react-router-dom'
+
+const Category = ({img,id}) => {
+  const navigate=useNavigate();
   return (
     <div className={style.shopbycategory}>
       <div className={style.categories}>
-        <div className={style.category}>
-          <img src={cat1} alt="" />
-        </div>
-        <div className={style.category}>
-          <img src={cat1} alt="" />
-        </div>
-        <div className={style.category}>
-          <img src={cat1} alt="" />
-        </div>
-        <div className={style.category}>
-          <img src={cat1} alt="" />
+        <div className={style.category} onClick={()=>navigate(`/singleproduct/${id}`)}>
+          <img src={img} alt="ram" />
         </div>
       </div>
       
